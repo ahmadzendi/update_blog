@@ -9,7 +9,7 @@ import os
 TOKEN = os.environ.get('TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 
-URL = 'https://blog.indodax.com/en_US/newsroom-latest-stories'
+URL = 'https://blog.indodax.com/newsroom-latest-stories'
 LAST_POST_FILE = 'last_post.json'
 
 def get_latest_post():
