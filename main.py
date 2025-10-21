@@ -59,7 +59,7 @@ def main():
             print("Notifikasi dikirim:", latest_post['title'])
         else:
             print("Belum ada update baru.")
-        time.sleep(30) # Cek setiap 5 menit
+        time.sleep(30) # Cek waktu
 
 if __name__ == '__main__':
     main()
