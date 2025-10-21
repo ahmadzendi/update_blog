@@ -6,7 +6,7 @@ import os
 from datetime import datetime, timedelta, timezone
 import os
 
-TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
+TOKEN = os.environ.get('TOKEN')
 CHAT_ID = os.environ.get('CHAT_ID')
 
 URL = 'https://blog.indodax.com/en_US/newsroom-latest-stories'
@@ -28,7 +28,7 @@ def get_latest_post():
     return None
 
 def send_telegram_message(message):
-    url = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage'
+    url = f'https://api.telegram.org/bot{TOKEN}/sendMessage'
     data = {
         'chat_id': CHAT_ID,
         'text': message,
